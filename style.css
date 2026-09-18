@@ -51,6 +51,12 @@ nav a.active {
   font-weight: 600;
 }
 
+.subnav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 section {
   border-bottom: 1px solid var(--border);
 }

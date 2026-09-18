@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automotive Dynamics — Yu-Hsuan Huang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Yu-Hsuan Huang</h1>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <nav class="subnav">
+    <a href="robot-learning.html">Robot Learning</a>
+    <a href="motion-planning.html">Motion Planning & Control</a>
+    <a href="hardware-integration.html">Hardware & System Integration</a>
+    <a href="automotive-dynamics.html" class="active">Automotive Dynamics</a>
+  </nav>
+</section>
+
+<section class="container">
+  <div class="entry">
+    <h3>ABS Braking Dynamics Simulation</h3>
+    <img class="media-placeholder" src="assets/automotive_dynamics.png" alt="ABS Braking Dynamics Simulation">
+    <p>
+      A mechanical ABS testing platform needed a validated simulation to confirm its behavior matched the real hardware before running experiments. The rig used a motor-driven steel wheel to spin a tire up to a target speed, with loading wheels providing equivalent inertia; once at speed, the motor disengaged and a brake, switchable between a standard brake and an ABS-equipped brake, was applied. I built the dynamic model of the platform in MATLAB, capturing how, without ABS, a large brake force locks the tire while the steel wheel keeps spinning, whereas with ABS the same force decelerates the tire and wheel together without lockup. The PhD student who designed and built the physical platform led the project; I built the simulation to match sim and real results and assisted during experiments.
+    </p>
+  </div>
+</section>
+
+<footer class="container">
+  <p>&copy; 2026 Yu-Hsuan Huang</p>
+</footer>
+
+</body>
+</html>

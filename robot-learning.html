@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robot Learning — Yu-Hsuan Huang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Yu-Hsuan Huang</h1>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <nav class="subnav">
+    <a href="robot-learning.html" class="active">Robot Learning</a>
+    <a href="motion-planning.html">Motion Planning & Control</a>
+    <a href="hardware-integration.html">Hardware & System Integration</a>
+    <a href="automotive-dynamics.html">Automotive Dynamics</a>
+  </nav>
+</section>
+
+<section class="container">
+  <div class="entry">
+    <h3>End to End imitation learning pipeline</h3>
+    <p>
+      The kitchen robot needed to perform complex, contact-rich manipulation tasks that were difficult to hand-code with classical planning. Working with a small team, I was one of the main contributors to building an end-to-end imitation learning pipeline to let the robot learn these behaviors directly from demonstrations. I led the low-latency teleoperation system used to collect expert demonstrations, and worked with teammates on the LeRobot-based training pipeline, which used image and robot-state observations to train a diffusion policy that outputs joint commands. The trained policy was deployed on the real robot and reproduced the demonstrated behaviors successfully in practical tests.
+    </p>
+  </div>
+</section>
+
+<footer class="container">
+  <p>&copy; 2026 Yu-Hsuan Huang</p>
+</footer>
+
+</body>
+</html>

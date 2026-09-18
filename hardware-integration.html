@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardware & System Integration — Yu-Hsuan Huang</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Yu-Hsuan Huang</h1>
+    <nav>
+      <a href="index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <nav class="subnav">
+    <a href="robot-learning.html">Robot Learning</a>
+    <a href="motion-planning.html">Motion Planning & Control</a>
+    <a href="hardware-integration.html" class="active">Hardware & System Integration</a>
+    <a href="automotive-dynamics.html">Automotive Dynamics</a>
+  </nav>
+</section>
+
+<section class="container">
+  <div class="entry">
+    <h3>3D printed Robot Arm</h3>
+    <img class="media-placeholder" src="assets/3dp_arm.png" style="object-fit: contain;">
+    <iframe class="media-placeholder" src="https://www.youtube.com/embed/6-0QxQJS-tU" title="3D printed Robot Arm" allowfullscreen></iframe>
+    <p>
+      I wanted a custom 6-axis robot arm platform for research and prototyping, built from scratch rather than off the shelf. I designed all the mechanical components, selected Harmonic Drive gearing with Maxon EPOS4 Flat motors and drivers as the actuation unit, and assembled the full arm, then developed the accompanying motion-planning framework for control. The result was a working 6-axis arm with 1 kg payload capable of essential robotic arm movements and control.
+    </p>
+  </div>
+  <div class="entry">
+    <h3>Electrical Stove Integration</h3>
+    <p>
+      The kitchen robot needed automated flame control, but the traditional Chinese stove it worked with only had manual mechanical controls. I designed and built a custom electronic stove control unit and implemented the state-machine logic governing flame transitions during cooking operation. This improved system responsiveness and task stability under real-world kitchen conditions, and the design is named as an invention in US patent application 2026/0110436 A1, currently under review.
+    </p>
+  </div>
+  <div class="entry">
+    <h3>Swerve Drive Mobile Robot Control</h3>
+    <img class="media-placeholder" src="assets/swerve_drive.png" style="object-fit: contain;">
+    <p>
+      A mobile robot platform needed agile, omnidirectional movement with high precision to operate reliably in dynamic environments. I built an 8-DOF swerve-drive mobile robot prototype and implemented its control and navigation algorithm within the ROS2 control framework, delivering agile, omnidirectional movement with high precision in dynamic environments.
+    </p>
+  </div>
+  <div class="entry">
+    <h3>Industrial Mobile Robot and Robot Arm OEM</h3>
+    <img class="media-placeholder" src="assets/amir.png" style="object-fit: contain;">
+    <p>
+      The company needed OEM-manufactured robot arm and mobile robot hardware that met its technical requirements, along with the software to actually run it. I served as the client-side point of contact for the OEM vendor, selecting and confirming specifications and key components and verifying deliverables against spec, then integrated the hardware with our ROS control framework and developed the arm's path planning and the mobile robot's localization and navigation.
+    </p>
+  </div>
+  <div class="entry">
+    <h3>Robot Arm and AOI Integration</h3>
+    <iframe class="media-placeholder" src="https://www.youtube.com/embed/qFwv5ijmdsM" title="Robot Arm and AOI Integration" allowfullscreen></iframe>
+    <p>
+      Spray-gun quality inspection was done manually and was prone to human error. I integrated a robot arm with an AOI (automated optical inspection) machine, deploying a pick-and-place cell with optical sensors to automate the quality checks, reducing human inspection errors.
+    </p>
+  </div>
+</section>
+
+<footer class="container">
+  <p>&copy; 2026 Yu-Hsuan Huang</p>
+</footer>
+
+</body>
+</html>
